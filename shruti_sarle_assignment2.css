@@ -1,0 +1,536 @@
+/*
+Name: Sarle, Shruti
+Red ID: 823454288
+Class: CS545 Fall 2018
+CS545 C2
+Instructor: Cynthia Chie
+*/
+
+/*
+*Filename: Assignment2.css
+*Author: Shruti Sarle
+*Date Created: 09/13/2018
+This stylesheet is created for CS545 assignment 1 to give styles to HTML file.
+*/
+
+/*==================================LAYOUT TAGS======================================*/
+*{
+	box-sizing:border-box;
+}
+
+body {
+	font-size: 14pt;
+	background-color: #606060;
+	color:#ffffff;
+	font-family: Gill Sans, sans-serif;
+	font-weight:normal;
+	margin-top: 0px;
+}
+img{
+	margin-right: 5px;
+	margin-bottom:2px;
+	border: solid #000000 3px;
+	padding: 2px;
+}
+header {
+background-color: #303030;
+background-size: cover;
+background-position: center;
+}
+
+address{
+	font-size: 12pt;
+	margin-left: 63px;
+	margin-right: 63px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 30px;
+    }
+
+footer {	
+	left: 0;
+	bottom: 0;
+	width:100%;
+	height:500px;
+    background-color: #303030;
+    color: white;
+    }
+.logo
+{
+	margin-right: 40px;
+	height: 200px;
+	width:200px;
+	border:none;
+}
+
+.logoname /*For logo and name layout*/
+{
+  display: flex;
+  align-items: center;
+}
+
+.logoname > div { 
+  width: 100px;
+  margin: 8px;
+}
+
+#menu{
+	height: 60px;
+	background-color: #98B926;
+}
+
+/*Navigation Bar*/
+ul.NavBar {
+	list-style-type: none;
+	margin-TOP: 80px;
+	padding: 10px;
+	overflow: hidden;
+	background-color: #98B926;   
+	color: #fffcf5;
+}
+
+ul.NavBar li {
+	padding: 10px;
+	display: inline-block;
+	text-align: center;	
+}
+
+ul.NavBar li a:link, nav ul.NavBar li a:visited {
+	color: #fffcf5;
+	text-decoration: none;
+}
+
+ul.NavBar li a:hover, nav ul.NavBar li a:active {
+	color: #000000;
+	background-color: #fffcf5;
+	text-decoration: none;
+}
+
+/*For slider of homepage*/
+
+.slider{
+	width: 100%;
+	margin: auto;
+	overflow:hidden;
+}
+
+.slider ul{
+	padding:0;
+	display:flex;
+	width: 400%;
+	animation: cambio 20s infinite;
+	animation-timing-function: ease-in;
+}
+  
+.slider li{
+	width: 100%;
+	height:400px;
+	list-style:none;
+}
+
+.slider img{
+	width:100%;
+}
+
+@keyframes cambio
+{
+	0%
+	{ margin-left:0; }
+	20%
+	{ margin-left:0; }
+	25%
+	{ margin-left: -100%; }
+	45%
+	{ margin-left: -100%; }
+	50%
+	{ margin-left: -200%; }
+	70%
+	{ margin-left: -200%; }
+	75%
+	{ margin-left: -300%; }
+	100%
+	{ margin-left: -300%; }
+}
+
+/*Headings styling*/
+
+H1 {
+	font-weight:bold;
+	color:#ffffff;
+	font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+	float: left;
+	margin-TOP: 0;
+	}
+
+H2 {
+	font-weight:normal;
+	color:#ECBD1C;
+	font-family: Gill Sans, sans-serif;
+	/*font-family: Tahoma, Geneva, sans-serif;Bookman, "URW Bookman L", serif;*/
+	text-align:center;
+	}
+
+H3 {
+	font-size: 18pt;
+	font-weight:bold;
+	Color:#FFFFFF;
+	font-family: Gill Sans, sans-serif;
+	font-weight:normal;
+	margin:20px;
+	padding-left:20px;
+	padding-right:20px;
+	}
+
+H4 {
+	font-size: 14pt;
+	font-weight:bold;
+	Color:#C06030;
+	font-family:Bookman, "URW Bookman L", serif;
+	font-family: Tahoma, Geneva, sans-serif;
+	}
+	
+H5 {
+	font-size: 12pt;
+	margin-left: 63px;
+	margin-right: 63px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	padding: 30px;
+	}
+H6 {
+	font-size: 10pt;
+	font-weight: normal;
+	Color:#ffffff;
+	text-align:center;
+	font-family:Bookman, "URW Bookman L", serif;
+	font-family: Tahoma, Geneva, sans-serif;
+	margin-top:0px;
+	margin-bottom: 5px;
+	margin-left: 15px;
+	margin-right: 15px;
+    }
+
+a {
+font-weight:bold;	
+}
+
+.center{
+	text-align:center;
+	align-items: center
+}
+
+.content {         /*For homepage content*/
+    max-width: 75%;
+    margin: auto;
+}
+.contentsubpages {      /*For other pages content*/
+	max-width: 70%;
+    margin: auto;
+	background-color: #202020;
+	padding:20px;
+}
+.contentsubpages img {
+	width: 100%;
+    height:100%;
+}
+
+.flex-container1 {
+	max-width:90%;
+  display: flex;
+   flex-wrap: wrap;
+   margin:auto;
+   justify-content:center;
+}
+.eventcontent{
+	max-width: 100%;
+    margin: auto;
+}
+
+.eventcontent img{
+	margin-right: 10px;
+	margin-bottom:5px;
+	border: solid #202020 3px;
+	padding: 8px;
+	height: 300px;
+	width:400px;	
+	float: left;
+}
+.flex-footer {  /*to divide footer in 4 parts*/
+  display: flex;
+ align-items: stretch;
+justify-content:  space-between;
+}
+.flex-footer > div {
+ margin: 8px;
+  padding: 10px;
+  font-size: 20px;
+}
+.footerlogo
+{
+width: 50px;
+height: 50px;
+margin-left: 5px;
+margin-right: 5px;
+}
+.googlemap
+{
+width: 180px;
+height: 180px;
+margin-left: 5px;
+margin-right: 5px;
+}
+
+.buttonspace{           /*to leave extra space before button */
+	padding:50px;
+}
+
+.button {		/*Buttons for footer*/
+    background-color: #98B926; 
+    border: solid #000000;
+    color: #000000;
+	padding-bottom:15px;
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 19px;
+    cursor: pointer;
+}
+
+.button1 {                  /*Style for buttons*/
+	border-radius: 9px;
+	}
+
+.buttonG {		/*button for Get involved page*/
+  background-color: #98B926; 
+  border: solid #000000;
+  color: #000000;
+  padding-bottom:15px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 19px;
+  cursor: pointer;
+  margin:10%;
+}
+
+.get_involvedside {           /*column layout for GetInvolved page*/
+    flex: 15%;
+    background-color: #707070;
+    padding:20px;
+	
+}
+.get_involvedmain {
+    flex: 55%;
+    background-color: #404040;
+    padding: 10px;
+}
+.get_involvedrow {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Created two equal columns that sits next to each other with diff color */
+.side {
+    flex: 50%;
+    background-color: #707070;
+    padding:20px;
+}
+.main {
+    flex: 50%;
+    background-color: #404040;
+    padding: 20px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.row img{
+	width: 100%;
+	height: 400px;
+}
+.side img{
+	width:75px;
+	height:79px;
+}
+/* Created three unequal columns that sits next to each other */
+.section{
+	flex: 33.33%;
+    background-color: #202020;
+    padding:40px;
+}
+.section img{
+	width: 100%;
+	height: 250px;
+}
+
+.volunteerimg img{
+	width: 100%;
+	height: 600px;	
+}
+
+/* Gallery */
+/* Create four equal columns that sits next to each other responsive */
+.column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+@media (max-width: 800px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+/*Exhibition page */
+
+.flex-container1 {
+  display: flex;
+   flex-wrap: wrap;
+}
+
+.Exhibitionbox1{
+    border: 5px solid #FF8080;
+    padding: 5px;
+    margin: 25px;
+	background-color: #202020;
+	width:45%;
+}
+
+.Exhibitionbox2 {
+    border: 7px solid #AFE0FA;
+    padding: 5px;
+    margin: 25px;
+	background-color: #202020;
+	width:45%;
+}
+
+.Exhibitionbox1 img{
+	width:400px;
+	height:200px;
+	margin-left:30px;
+}
+
+.Exhibitionbox2 img{
+	width:400px;
+	height:200px;
+	float:right;
+	margin-right: 20px;	
+}
+/* Science page*/
+.sciencebox{
+    padding: 5px;
+    margin: 25px;
+	width:40%;
+}
+.sciencebox img{
+	width:400px;
+	height:300px;
+}
+
+.eventbox1{  /*Created 3 boxes for different border color*/
+	width: 300px;
+    border: 7px solid #FF8080;
+    padding: 25px;
+    margin: 15px;
+	background-color: #202020;
+}
+.eventbox2{
+    width: 300px;
+    border: 7px solid #AFE0FA;
+    padding: 25px;
+    margin: 15px;
+	background-color: #202020;
+}
+.eventbox3{
+    width: 300px;
+    border: 7px solid #FFBE7D;
+    padding: 25px;
+    margin: 15px;
+	background-color: #202020;
+}
+
+/* donate now page*/
+.donate_now_side { 
+    flex: 29%;
+    background-color: #707070;
+    padding:2px;
+	margin:auto;
+}
+.donate_now_main {
+    flex: 39%;
+    background-color: #404040;
+    padding: 2px;
+}
+.donate_now_row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.box_donate1 {
+    width: 500px;
+    border: 4px solid #FFBE7D;
+    margin: auto;
+	background-color: #202020;
+	padding: 5px;
+}
+.box_donate2 {
+    width: 500px;
+    border: 4px solid #FFBE7D;
+    padding: 5px;
+    margin: auto;
+	background-color: #202020;
+}
+.box_donate3 {
+    width: 500px;
+    border: 4px solid #FFBE7D;
+    padding: 5px;
+    margin: auto;
+	background-color: #202020;
+}
+.box_donate4 {
+    width: 500px;
+    border: 4px solid #FFBE7D;
+    padding: 5px;
+    margin: auto;
+	background-color: #202020;
+	
+}
+.box_donate2 img{
+width:80px;
+	height:80px;	
+}
+
+.box_donate3 img{
+width:80px;
+	height:80px;	
+}
+/*about us page*/
+.aboutusimg img{
+	
+	width: 100%;
+	height:100%;
+}
+
